@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="rules">
+            <img src="images/rsp.png"> 
+        <h1>Rock Paper Scissors</h1>
+           <h2>Rules of the game</h2>
+           <p>Players count together out loud, “Rock... Scissors... Paper... One... Two... Three,” while pumping their fists. On the count of “Three”, they simultaneously show with their hand one of three signs: stone, scissors or paper. Two players must place scissors at the beginning, followed by any other symbol.
+           <p>The winner is determined according to the following rules:</p>
+           <p>Paper beats stone</p>
+           <p>Rock beats scissors</p>
+           <p>Scissors beat paper</p>
+           <p>If the players show the same sign, then the game is considered a draw and the game is replayed.
+            In the classic version, the game is played by two people, but it is possible to play with more participants. In this case, a draw is counted in a situation when all three gestures appeared in the company of players, or if all players showed the same sign.
+           </p>
+        </div>
+
+
+        <div class="other">   
+            <div id="buttons">
+                <button onclick="playGame('Rock')">Rock</button>
+                <button onclick="playGame('Scissors')">Scissors</button>
+                <button onclick="playGame('Paper')">Paper</button>
+            </div>
+            <div class="choices">
+                <div id="user-choice"></div>
+                <div id="computer-choice"></div>
+            </div> 
+            <div id="result"></div>
+             <div id="score"></div>
+        </div> 
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
